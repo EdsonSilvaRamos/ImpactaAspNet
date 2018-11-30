@@ -6,12 +6,21 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Linq;
+using static System.Configuration.ConfigurationManager;
 
 namespace Oficina.Repositorios
 {
     public class MarcaRepositorio
     {
-        private string caminhoArquivo = ConfigurationManager.AppSettings["caminhoArquivoMarca"];
+        private readonly string caminhoArquivo;
+        private XDocument arquivoXml;
+
+        public MarcaRepositorio()
+        {
+            caminhoArquivo = Path.Combine(AppDomain.CurrentDomain.BaseDirectory,
+                AppSettings["caminhoArquivoMarca"]);
+        }
 
         public List<Marca> Selecionar()
         {
