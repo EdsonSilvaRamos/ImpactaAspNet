@@ -16,11 +16,12 @@ namespace Oficina.Repositorios.Tests
         [TestMethod()]
         public void InserirTest()
         {
-            var veiculo = new Veiculo();
+            var veiculo = new VeiculoPasseio();
             veiculo.Placa = "ABC1234";
             veiculo.Ano = 2019;
             veiculo.Observacao = "Teste";
             veiculo.Cambio = Cambio.Automatico;
+            veiculo.Carroceria = Carroceria.Hatch;
             veiculo.Combustivel = Combustivel.Flex;
             veiculo.Cor = new CorRepositorio().Selecionar(1);
             veiculo.Modelo = new ModeloRepositorio().Selecionar(2);

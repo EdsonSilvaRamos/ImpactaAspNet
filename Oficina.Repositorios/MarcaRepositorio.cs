@@ -14,7 +14,7 @@ namespace Oficina.Repositorios
     public class MarcaRepositorio
     {
         private readonly string caminhoArquivo;
-        private XDocument arquivoXml;
+       
 
         public MarcaRepositorio()
         {

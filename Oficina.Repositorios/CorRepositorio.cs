@@ -13,7 +13,6 @@ namespace Oficina.Repositorios.SistemaArquivos
     public class CorRepositorio
     {
         private readonly string caminhoArquivo;
-        private XDocument arquivoXml;
 
         public CorRepositorio()
         {
