@@ -6,21 +6,21 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Xml.Linq;
-using static System.Configuration.ConfigurationManager;
+
 
 namespace Oficina.Repositorios.SistemaArquivos
 {
-    public class CorRepositorio
+    public class CorRepositorio : RepositorioBase
     {
-        private readonly string caminhoArquivo;
+        private string caminhoArquivo;
 
         public CorRepositorio()
         {
             //ToDo: implementar método de extensão.
-            caminhoArquivo = Path.Combine(AppDomain.CurrentDomain.BaseDirectory,
-                AppSettings["caminhoArquivoCor"]);
+            caminhoArquivo = ObterCaminhoCompleto("caminhoArquivoCor");
         }
 
+        //Todo: OO - Polimorfismo por sobrecarga
         public List<Cor> Selecionar()
         {
             var cores = new List<Cor>();

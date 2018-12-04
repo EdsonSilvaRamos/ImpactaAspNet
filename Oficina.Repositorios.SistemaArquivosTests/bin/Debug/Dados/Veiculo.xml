@@ -61,4 +61,25 @@
     <Cambio>Automatico</Cambio>
     <Carroceria>Hatch</Carroceria>
   </VeiculoPasseio>
+  <VeiculoPasseio xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <Id>dba34751-b1ea-425b-9511-2af765dea348</Id>
+    <Placa>ABC1234</Placa>
+    <Ano>2019</Ano>
+    <Observacao>Teste</Observacao>
+    <Modelo>
+      <Id>2</Id>
+      <Nome>Civic</Nome>
+      <Marca>
+        <Id>2</Id>
+        <Nome>Honda</Nome>
+      </Marca>
+    </Modelo>
+    <Cor>
+      <Id>1</Id>
+      <Nome>Preto</Nome>
+    </Cor>
+    <Combustivel>Flex</Combustivel>
+    <Cambio>Automatico</Cambio>
+    <Carroceria>Hatch</Carroceria>
+  </VeiculoPasseio>
 </veiculos>

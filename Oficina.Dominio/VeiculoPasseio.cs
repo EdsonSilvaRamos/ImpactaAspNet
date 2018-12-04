@@ -6,10 +6,12 @@ using System.Threading.Tasks;
 
 namespace Oficina.Dominio
 {
+    //ToDo: OO - Herança (:) com a clase Veiculo.
     public class VeiculoPasseio : Veiculo
     {
         public Carroceria Carroceria { get; set; }
 
+        //Todo: OO - Polimorfismo por sobrescrita.
         public override List<string> Validar()
         {
             var erros = ValidarBase();
