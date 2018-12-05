@@ -19,7 +19,7 @@
     </Cor>
     <Combustivel>Flex</Combustivel>
     <Cambio>Automatico</Cambio>
-  </Veiculo>  
+  </Veiculo>
   <Veiculo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
     <Id>421c6ef7-ac3b-498a-890d-379dfaaf6809</Id>
     <Placa>ABC1234</Placa>
@@ -39,7 +39,7 @@
     </Cor>
     <Combustivel>Flex</Combustivel>
     <Cambio>Automatico</Cambio>
-  </Veiculo>  
+  </Veiculo>
   <Veiculo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
     <Id>59268461-786a-476d-8c1a-89e6291ef7f4</Id>
     <Placa>ADC2134</Placa>
@@ -60,4 +60,25 @@
     <Combustivel>Flex</Combustivel>
     <Cambio>SemiAutomatico</Cambio>
   </Veiculo>
+  <VeiculoPasseio xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <Id>d5bb3479-51e3-4625-a648-8ec2b7424b7f</Id>
+    <Placa>ABC4577</Placa>
+    <Ano>2018</Ano>
+    <Observacao>teste</Observacao>
+    <Modelo>
+      <Id>1</Id>
+      <Nome>Fox</Nome>
+      <Marca>
+        <Id>1</Id>
+        <Nome>VW</Nome>
+      </Marca>
+    </Modelo>
+    <Cor>
+      <Id>4</Id>
+      <Nome>Prata</Nome>
+    </Cor>
+    <Combustivel>Flex</Combustivel>
+    <Cambio>Manual</Cambio>
+    <Carroceria>Hatch</Carroceria>
+  </VeiculoPasseio>
 </veiculos>

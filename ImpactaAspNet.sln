@@ -23,6 +23,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Oficina.Repositorios.Sistem
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Oficina.WebPages", "Oficina.WebPages\Oficina.WebPages.csproj", "{C4BD52BA-EFF4-4A05-8810-E24BED58E227}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspNetVS2017.Capitulo03.Portfolio", "AspNetVS2017.Capitulo03.Portfolio\AspNetVS2017.Capitulo03.Portfolio.csproj", "{48725B9A-0B73-4C30-B172-9C98259D51E2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -65,6 +67,10 @@ Global
 		{C4BD52BA-EFF4-4A05-8810-E24BED58E227}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C4BD52BA-EFF4-4A05-8810-E24BED58E227}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C4BD52BA-EFF4-4A05-8810-E24BED58E227}.Release|Any CPU.Build.0 = Release|Any CPU
+		{48725B9A-0B73-4C30-B172-9C98259D51E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{48725B9A-0B73-4C30-B172-9C98259D51E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{48725B9A-0B73-4C30-B172-9C98259D51E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{48725B9A-0B73-4C30-B172-9C98259D51E2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
