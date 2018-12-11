@@ -20,9 +20,9 @@ namespace Pessoal.Repositorio.SqlServer.Tests
             var tarefa = new Tarefa();
 
             tarefa.Concluida = false;
-            tarefa.Nome = "Passar roupa";
-            tarefa.Observacoes = "Rápido";
-            tarefa.Prioridade = Prioridade.Alta;
+            tarefa.Nome = "Arrumar o Quarto";
+            tarefa.Observacoes = "Pode ser no Fim de Semana";
+            tarefa.Prioridade = Prioridade.Baixa;
 
             tarefa.Id = repositorio.Inserir(tarefa);
 
@@ -41,6 +41,23 @@ namespace Pessoal.Repositorio.SqlServer.Tests
             tarefa.Prioridade = Prioridade.Baixa;
 
             repositorio.Atualizar(tarefa);
+        }
+
+        [TestMethod()]
+        public void SelecionarTest()
+        {
+            foreach (var tarefa in repositorio.Selecionar())
+            {
+                Console.WriteLine($"{tarefa.Id} - {tarefa.Nome} - {tarefa.Observacoes} - {tarefa.Prioridade} - {tarefa.Concluida}");
+            }
+        }
+
+        [TestMethod()]
+        public void ExcluirTeste()
+        {
+            repositorio.Excluir(1);
+
+            Assert.IsNull(repositorio.Selecionar(1));
         }
     }
 }
