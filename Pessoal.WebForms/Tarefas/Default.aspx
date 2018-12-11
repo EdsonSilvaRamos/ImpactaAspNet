@@ -2,7 +2,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
     <h1>Tarefas</h1>
     <asp:LinkButton ID="LinkButton1" runat="server" PostBackUrl="Create">Nova Tarefa</asp:LinkButton>
-    <asp:GridView runat="server" DataSourceID="tarefasObjectDataSource">
+    <asp:GridView runat="server" DataSourceID="tarefasObjectDataSource" Width="100%" AutoGenerateColumns="false">
         <Columns>
             <asp:BoundField DataField="Nome" HeaderText="Nome"/>
             <asp:BoundField DataField="Prioridade" HeaderText="Prioridade"/>
