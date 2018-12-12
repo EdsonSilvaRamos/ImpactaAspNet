@@ -51,6 +51,8 @@ Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "Pessoal.Database", "Pessoal
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pessoal.WebForms", "Pessoal.WebForms\Pessoal.WebForms.csproj", "{B16805D5-F4FC-420A-9174-CB505871C411}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspNetVS2017.Capitulo08.EF.ModelFirst", "AspNetVS2017.Capitulo08.EF.ModelFirst\AspNetVS2017.Capitulo08.EF.ModelFirst.csproj", "{6CD565C0-0615-408D-B91C-37745B4756E7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -141,6 +143,10 @@ Global
 		{B16805D5-F4FC-420A-9174-CB505871C411}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B16805D5-F4FC-420A-9174-CB505871C411}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B16805D5-F4FC-420A-9174-CB505871C411}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6CD565C0-0615-408D-B91C-37745B4756E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6CD565C0-0615-408D-B91C-37745B4756E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6CD565C0-0615-408D-B91C-37745B4756E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6CD565C0-0615-408D-B91C-37745B4756E7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
