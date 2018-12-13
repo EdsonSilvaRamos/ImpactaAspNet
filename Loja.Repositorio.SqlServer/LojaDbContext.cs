@@ -28,6 +28,10 @@ namespace Loja.Repositorio.SqlServer
             modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();
 
             modelBuilder.Configurations.Add(new ProdutoConfiguration());
+            modelBuilder.Configurations.Add(new CategoriaConfiguration());
+            modelBuilder.Configurations.Add(new ClienteConfiguration());
+            modelBuilder.Configurations.Add(new PedidoConfiguration());
+            modelBuilder.Configurations.Add(new ProdutoImagemConfiguration());
 
             //#region Produto
 

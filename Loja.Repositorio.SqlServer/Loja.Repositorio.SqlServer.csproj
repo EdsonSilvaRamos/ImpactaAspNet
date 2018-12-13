@@ -48,7 +48,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="LojaDbContext.cs" />
+    <Compile Include="ModelConfiguration\CategoriaConfiguration.cs" />
+    <Compile Include="ModelConfiguration\ClienteConfiguration.cs" />
+    <Compile Include="ModelConfiguration\PedidoConfiguration.cs" />
     <Compile Include="ModelConfiguration\ProdutoConfiguration.cs" />
+    <Compile Include="ModelConfiguration\ProdutoImagemConfiguration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

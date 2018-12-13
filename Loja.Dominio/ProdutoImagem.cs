@@ -2,6 +2,7 @@
 {
     public class ProdutoImagem
     {
+        //[Key]
         public int ProdutoId { get; set; }
         public byte[] Bytes { get; set; }
         public string ContentType { get; set; }
