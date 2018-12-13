@@ -78,5 +78,20 @@ namespace Loja.Repositorio.SqlServer.Tests
 
             db.SaveChanges();
         }
+
+        [TestMethod]
+        public void ExluirProdutoTeste()
+        {
+            var produto = db.Produtos
+                .Where(p => p.Categoria.Nome == "Informática")
+                .ToList();
+
+            db.Produtos.RemoveRange(produto);
+            db.SaveChanges();
+
+            Assert.IsFalse(db.Produtos
+                .Any(p => p.Categoria.Nome == "Informática"));
+
+        }
     }
 }
