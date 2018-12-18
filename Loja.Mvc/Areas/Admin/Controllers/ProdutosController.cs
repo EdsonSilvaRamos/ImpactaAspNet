@@ -126,14 +126,16 @@ namespace Loja.Mvc.Areas.Admin.Controllers
             return RedirectToAction("Index");
         }
 
-        [ActionName("Admin/Produtos/Categoria")]
+        [ActionName("Categoria")]
         public ActionResult ObterProdutoPorCategoria(int categoraId)
         {
             var produtos = db.Produtos
                 .Where(p => p.Categoria.Id == categoraId)
+                .Select(p => new { p.Nome, p.Preco, p.Estoque})
                 .ToList();
 
-            return Json(map.Mapear(produtos), JsonRequestBehavior.AllowGet);
+            //return Json(map.Mapear(produtos), JsonRequestBehavior.AllowGet);
+            return Json(produtos, JsonRequestBehavior.AllowGet);
         }
 
         protected override void Dispose(bool disposing)
