@@ -207,18 +207,24 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Helpers\CultureHelper.cs" />
     <Compile Include="Mapeamento\ProdutoMapeamento.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\Cookie.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\blank.gif" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\flags.css" />
+    <Content Include="Content\flags.min.css" />
+    <Content Include="Content\flags.png" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -281,6 +287,7 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\Shared\_CulturePartial.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -306,6 +313,10 @@
     <ProjectReference Include="..\Loja.Repositorio.SqlServer\Loja.Repositorio.SqlServer.csproj">
       <Project>{b0c9004a-8a23-4403-980e-187f616c94da}</Project>
       <Name>Loja.Repositorio.SqlServer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Loja.Resources\Loja.Resources.csproj">
+      <Project>{a8019d58-c07e-4861-bde1-3737d3c92757}</Project>
+      <Name>Loja.Resources</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
